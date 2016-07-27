@@ -11,7 +11,7 @@ public class MoveBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		bulletRigidBody.velocity = (transform.up * moveSpeedBullet)*Time.deltaTime;  //new Vector2 (moveSpeedBullet, moveSpeedBullet)*Time.deltaTime;
+		bulletRigidBody.velocity = (transform.up * moveSpeedBullet)*Time.deltaTime;  
 	}
 
 	void OnTriggerEnter2D( Collider2D enemy){

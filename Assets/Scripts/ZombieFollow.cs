@@ -14,7 +14,7 @@ public class ZombieFollow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Vector3.Distance (transform.position, playerT.position) > 0.1f) {
 			transform.position += Vector3.Normalize (playerT.position - transform.position) * ZombieSpeed * Time.deltaTime;
 		}
